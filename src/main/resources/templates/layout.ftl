@@ -47,24 +47,17 @@
  _________________________________________________________ -->
     <div id="top">
         <div class="container">
-            <div class="col-md-6 offer" data-animate="fadeInDown">
-                <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over $50!</a>
+            <div class="col-md-6 offer">
+               Offer of the day  Get flat 35% off on orders over $50!
             </div>
-            <div class="col-md-6" data-animate="fadeInDown">
+            <div class="col-md-6">
                 <ul class="menu">
                     <#if principal??>
                     <li class="dropdown yamm-fw">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">${principal.name}さん<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                                <div class="yamm-content">
-                                    <div class="row">
-                                            <div class="col-sm-3">
-                                                <a href="/logout" class="layout-menu-font">Logout</a>
-                                            </div>
-                                    </div>
-                                </div>
-                                <!-- /.yamm-content -->
-                        </ul>
+                            <font color="white">${principal.name}さん</font>
+                            <a href="/logout" class="layout-menu-font">Logout</a>
+                             <!-- /.yamm-content -->
+
                     </li>
                     <#else>
                     <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
@@ -120,7 +113,7 @@
         <div class="container">
             <div class="navbar-header">
 
-                <a class="navbar-brand home" href="/" data-animate-hover="bounce">
+                <a class="navbar-brand home" href="/">
                     <img src="/img/TISCON_LOGO.png" alt="TISCON logo" class="hidden-xs">
                     <img src="/img/TISCON_LOGO.png" alt="TISCON logo" class="visible-xs"><span class="sr-only">go to homepage</span>
                 </a>
@@ -239,7 +232,7 @@
 
         <!-- *** FOOTER ***
  _________________________________________________________ -->
-        <div id="footer" data-animate="fadeInUp">
+        <div id="footer" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
@@ -269,8 +262,6 @@
                     <!-- /.col-md-3 -->
 
                     <div class="col-md-3 col-sm-6">
-
-                        <h4>Ranking</h4>
 
                         <h5>Movie</h5>
                         <ul>
@@ -322,8 +313,8 @@
                         <h4>Stay in touch</h4>
 
                         <p class="social">
-                            <a href="http://www.facebook.com/tis.recruit" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
-                            <a href="mailto:recruit★tis.co.jp" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
+                            <a href="http://www.facebook.com/tis.recruit" class="facebook external" ><i class="fa fa-facebook"></i></a>
+                            <a href="mailto:recruit★tis.co.jp" class="email external" ><i class="fa fa-envelope"></i></a>
                             <h6>メールアドレスの★を@に変換してください。</h6>
                         </p>
 

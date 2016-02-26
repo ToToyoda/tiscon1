@@ -35,6 +35,7 @@ public class AccountController {
     }
 
     @RequestMapping(value="/login")
+
     public String login(@Validated LoginForm form, BindingResult bindingResult, HttpSession session) {
         Customer customer = customerRepository.findOne(Specifications
                 .where((Specification<Customer>) (root, query, cb) ->
@@ -44,12 +45,11 @@ public class AccountController {
                 ));
         if (customer != null) {
             session.setAttribute("principal", new UserPrincipal(customer.getName()));
-            return "redirect:/my/account?id=" + customer.getId();
+            return  "/" ;//"redirect:/my/account?id=" + customer.getId();
         } else {
             return "newAccountOrSignIn";
         }
     }
-
     /**
      * Logout.
      *
@@ -57,7 +57,8 @@ public class AccountController {
      * @return
      */
     @RequestMapping(value="/logout")
-    public String logout(HttpSession session) {
+   public String logout(HttpSession session) {
+
         session.removeAttribute("principal");
         return "redirect:/";
     }
